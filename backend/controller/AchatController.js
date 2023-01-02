@@ -3,7 +3,8 @@ const Command=require('../model/CommandModel')
 const Payment=require('../model/Payment')
 
 const GetAllachats= async(req,res)=>{
-    const achats= await Achat.find()
+   
+  const achats= await Achat.find()
     .populate([
       {
         path: 'command_id',
